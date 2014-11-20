@@ -6,12 +6,14 @@
 
 #IncludeRegexTransform: 
 
-/Users/prasant/Documents/workspace/ImageAnalysis/moving_object_removal/src/median.cpp
+/home/pulkit/Downloads/IA/Project/Code/mor/src/median.cpp
 opencv/cv.h
 -
 opencv/highgui.h
 -
 iostream
+-
+fstream
 -
 
 /usr/local/include/opencv/cv.h
