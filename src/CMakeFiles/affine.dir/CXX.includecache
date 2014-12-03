@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/Users/prasant/Documents/workspace/ImageAnalysis/moving_object_removal/src/median.cpp
+/Users/prasant/Documents/workspace/ImageAnalysis/moving_object_removal/src/affine.cpp
 opencv/cv.h
 -
 opencv/highgui.h

@@ -4,3 +4,6 @@ find_package( OpenCV REQUIRED )
 
 add_executable( median median.cpp )
 target_link_libraries( median ${OpenCV_LIBS} )
+
+add_executable( affine affine.cpp )
+target_link_libraries( affine ${OpenCV_LIBS} )

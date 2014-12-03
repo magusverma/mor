@@ -1,9 +1,10 @@
 #include <opencv/cv.h>
 #include <opencv/highgui.h>
 #include <iostream>
-#include<fstream>
+#include <fstream>
 
-int input_img_count =13;
+#define input_img_count_const 14
+int input_img_count =14;
 
 using namespace std;
 using namespace cv;
@@ -21,10 +22,11 @@ int main(int argc, char const *argv[])
     while (std::getline(in, line))
     {
         std::istringstream iss(line);
+        cout << line << endl;
         contents.push_back(line);
     }
     input_img_count = contents.size();
-    Mat src_imgs[input_img_count];
+    Mat src_imgs[input_img_count_const];
     for(int i=0;i<input_img_count;i++){
         src_imgs[i] = imread(contents[i]);
     }
@@ -57,7 +59,7 @@ int main(int argc, char const *argv[])
 }
 
 void median(Mat* src_imgs, Mat& dst) {
-    Mat color_channels[input_img_count][3];
+    Mat color_channels[input_img_count_const][3];
 
     for (int n = 0; n < input_img_count; ++n) {
         split(src_imgs[n], color_channels[n]);

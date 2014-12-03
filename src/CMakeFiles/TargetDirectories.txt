@@ -1,1 +1,2 @@
-/home/pulkit/Downloads/IA/Project/Code/mor/src/CMakeFiles/median.dir
+/Users/prasant/Documents/workspace/ImageAnalysis/moving_object_removal/src/CMakeFiles/affine.dir
+/Users/prasant/Documents/workspace/ImageAnalysis/moving_object_removal/src/CMakeFiles/median.dir

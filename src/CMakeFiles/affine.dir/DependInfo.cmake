@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/prasant/Documents/workspace/ImageAnalysis/moving_object_removal/src/median.cpp" "/Users/prasant/Documents/workspace/ImageAnalysis/moving_object_removal/src/CMakeFiles/median.dir/median.cpp.o"
+  "/Users/prasant/Documents/workspace/ImageAnalysis/moving_object_removal/src/affine.cpp" "/Users/prasant/Documents/workspace/ImageAnalysis/moving_object_removal/src/CMakeFiles/affine.dir/affine.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "Clang")
 
