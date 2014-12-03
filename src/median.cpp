@@ -7,9 +7,8 @@
 #include <fstream>
 
 // #define input_img_count 5
-// #define input_img_count 13
-
-int input_img_count =13;
+#define input_img_count_const 5
+int input_img_count =5;
 
 using namespace std;
 using namespace cv;
@@ -27,10 +26,14 @@ int main(int argc, char const *argv[])
     while (std::getline(in, line))
     {
         std::istringstream iss(line);
+        cout << line << endl;
         contents.push_back(line);
     }
     input_img_count = contents.size();
-    Mat src_imgs[input_img_count];
+    Mat src_imgs[input_img_count_const];
+    for(int i=0;i<input_img_count;i++){
+        src_imgs[i] = imread(contents[i]);
+    }
     // src_imgs[0] = imread("../input/vlcsnap-2014-11-20-14h22m55s6.tiff", IMREAD_COLOR);
     // src_imgs[1] = imread("../input/vlcsnap-2014-11-20-14h22m55s8.tiff", IMREAD_COLOR);
     // src_imgs[2] = imread("../input/vlcsnap-2014-11-20-14h22m55s10.tiff", IMREAD_COLOR);
@@ -45,11 +48,11 @@ int main(int argc, char const *argv[])
     // src_imgs[11] = imread("../input/vlcsnap-2014-11-20-14h22m57s28.tiff", IMREAD_COLOR);
     // src_imgs[12] = imread("../input/vlcsnap-2014-11-20-14h22m57s30.tiff", IMREAD_COLOR);
 
-    src_imgs[0] = imread("../input_color_1.jpg", IMREAD_COLOR);
-    src_imgs[1] = imread("../input_color_2.jpg", IMREAD_COLOR);
-    src_imgs[2] = imread("../input_color_3.jpg", IMREAD_COLOR);
-    src_imgs[3] = imread("../input_color_4.jpg", IMREAD_COLOR);
-    src_imgs[4] = imread("../input_color_5.jpg", IMREAD_COLOR);
+    // src_imgs[0] = imread("../input_color_1.jpg", IMREAD_COLOR);
+    // src_imgs[1] = imread("../input_color_2.jpg", IMREAD_COLOR);
+    // src_imgs[2] = imread("../input_color_3.jpg", IMREAD_COLOR);
+    // src_imgs[3] = imread("../input_color_4.jpg", IMREAD_COLOR);
+    // src_imgs[4] = imread("../input_color_5.jpg", IMREAD_COLOR);
 
     Mat median_img = Mat(src_imgs[0].size(), src_imgs[0].type());
     median(src_imgs, median_img);
@@ -66,7 +69,7 @@ int main(int argc, char const *argv[])
 }
 
 void median(Mat* src_imgs, Mat& dst) {
-    Mat color_channels[input_img_count][3];
+    Mat color_channels[input_img_count_const][3];
 
     for (int n = 0; n < input_img_count; ++n) {
         split(src_imgs[n], color_channels[n]);

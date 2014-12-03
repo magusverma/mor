@@ -1,7 +1,3 @@
-<<<<<<< HEAD
 /Users/prasant/Documents/workspace/ImageAnalysis/moving_object_removal/src/CMakeFiles/image_alignment.dir
 /Users/prasant/Documents/workspace/ImageAnalysis/moving_object_removal/src/CMakeFiles/median.dir
 /Users/prasant/Documents/workspace/ImageAnalysis/moving_object_removal/src/CMakeFiles/registration.dir
-=======
-/home/pulkit/Downloads/IA/Project/Code/mor/src/CMakeFiles/median.dir
->>>>>>> 6254eb3601d9d3b092b2755dd55a521e25cc5002

@@ -1,4 +1,4 @@
-for file in ../input/*.*
+for file in ../lotus_input/*.*
 # contents
 do
   printf "%s\n" "$file"
