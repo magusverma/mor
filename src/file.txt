@@ -1,0 +1,15 @@
+../input/vlcsnap-2014-11-20-14h22m55s10.tiff
+../input/vlcsnap-2014-11-20-14h22m55s12.tiff
+../input/vlcsnap-2014-11-20-14h22m55s14.tiff
+../input/vlcsnap-2014-11-20-14h22m55s6.tiff
+../input/vlcsnap-2014-11-20-14h22m55s8.tiff
+../input/vlcsnap-2014-11-20-14h22m56s16.tiff
+../input/vlcsnap-2014-11-20-14h22m56s18.tiff
+../input/vlcsnap-2014-11-20-14h22m56s20.tiff
+../input/vlcsnap-2014-11-20-14h22m56s22.tiff
+../input/vlcsnap-2014-11-20-14h22m56s24.tiff
+../input/vlcsnap-2014-11-20-14h22m57s26.tiff
+../input/vlcsnap-2014-11-20-14h22m57s28.tiff
+../input/vlcsnap-2014-11-20-14h22m57s30.tiff
+../input/vlcsnap-2014-11-20-14h22m57s32.tiff
+../input/vlcsnap-2014-11-20-14h22m57s34.png

@@ -4,9 +4,12 @@
 #include <opencv2/highgui.hpp>
 #include <iostream>
 #include <sstream>
+#include <fstream>
 
-#define input_img_count 5
+// #define input_img_count 5
 // #define input_img_count 13
+
+int input_img_count =13;
 
 using namespace std;
 using namespace cv;
@@ -17,6 +20,16 @@ int find_mode_of_vector(vector<int> vals);
 
 int main(int argc, char const *argv[])
 {
+    system("./files.sh > file.txt");
+    std::ifstream in("file.txt");
+    std::vector<string> contents;
+    string line;
+    while (std::getline(in, line))
+    {
+        std::istringstream iss(line);
+        contents.push_back(line);
+    }
+    input_img_count = contents.size();
     Mat src_imgs[input_img_count];
     // src_imgs[0] = imread("../input/vlcsnap-2014-11-20-14h22m55s6.tiff", IMREAD_COLOR);
     // src_imgs[1] = imread("../input/vlcsnap-2014-11-20-14h22m55s8.tiff", IMREAD_COLOR);
