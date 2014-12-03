@@ -10,3 +10,6 @@ target_link_libraries( registration ${OpenCV_LIBS} )
 
 add_executable( image_alignment image_alignment.cpp )
 target_link_libraries( image_alignment ${OpenCV_LIBS} )
+
+add_executable( align_affine align_affine.cpp )
+target_link_libraries( align_affine ${OpenCV_LIBS} )

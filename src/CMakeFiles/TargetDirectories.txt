@@ -1,3 +1,0 @@
-/Users/prasant/Documents/workspace/ImageAnalysis/moving_object_removal/src/CMakeFiles/image_alignment.dir
-/Users/prasant/Documents/workspace/ImageAnalysis/moving_object_removal/src/CMakeFiles/median.dir
-/Users/prasant/Documents/workspace/ImageAnalysis/moving_object_removal/src/CMakeFiles/registration.dir
