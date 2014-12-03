@@ -39,10 +39,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pulkit/Downloads/IA/Project/Code/mor/src
+CMAKE_SOURCE_DIR = /home/neerav/iaproject/mor/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pulkit/Downloads/IA/Project/Code/mor/src
+CMAKE_BINARY_DIR = /home/neerav/iaproject/mor/src
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -69,9 +69,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pulkit/Downloads/IA/Project/Code/mor/src/CMakeFiles /home/pulkit/Downloads/IA/Project/Code/mor/src/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/neerav/iaproject/mor/src/CMakeFiles /home/neerav/iaproject/mor/src/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pulkit/Downloads/IA/Project/Code/mor/src/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/neerav/iaproject/mor/src/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -99,6 +99,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named get_mask
+
+# Build rule for target.
+get_mask: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 get_mask
+.PHONY : get_mask
+
+# fast build rule for target.
+get_mask/fast:
+	$(MAKE) -f CMakeFiles/get_mask.dir/build.make CMakeFiles/get_mask.dir/build
+.PHONY : get_mask/fast
+
+#=============================================================================
 # Target rules for targets named median
 
 # Build rule for target.
@@ -110,6 +123,30 @@ median: cmake_check_build_system
 median/fast:
 	$(MAKE) -f CMakeFiles/median.dir/build.make CMakeFiles/median.dir/build
 .PHONY : median/fast
+
+get_mask.o: get_mask.cpp.o
+.PHONY : get_mask.o
+
+# target to build an object file
+get_mask.cpp.o:
+	$(MAKE) -f CMakeFiles/get_mask.dir/build.make CMakeFiles/get_mask.dir/get_mask.cpp.o
+.PHONY : get_mask.cpp.o
+
+get_mask.i: get_mask.cpp.i
+.PHONY : get_mask.i
+
+# target to preprocess a source file
+get_mask.cpp.i:
+	$(MAKE) -f CMakeFiles/get_mask.dir/build.make CMakeFiles/get_mask.dir/get_mask.cpp.i
+.PHONY : get_mask.cpp.i
+
+get_mask.s: get_mask.cpp.s
+.PHONY : get_mask.s
+
+# target to generate assembly for a file
+get_mask.cpp.s:
+	$(MAKE) -f CMakeFiles/get_mask.dir/build.make CMakeFiles/get_mask.dir/get_mask.cpp.s
+.PHONY : get_mask.cpp.s
 
 median.o: median.cpp.o
 .PHONY : median.o
@@ -142,8 +179,12 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... get_mask"
 	@echo "... median"
 	@echo "... rebuild_cache"
+	@echo "... get_mask.o"
+	@echo "... get_mask.i"
+	@echo "... get_mask.s"
 	@echo "... median.o"
 	@echo "... median.i"
 	@echo "... median.s"

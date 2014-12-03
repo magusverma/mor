@@ -35,10 +35,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pulkit/Downloads/IA/Project/Code/mor/src
+CMAKE_SOURCE_DIR = /home/neerav/iaproject/mor/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pulkit/Downloads/IA/Project/Code/mor/src
+CMAKE_BINARY_DIR = /home/neerav/iaproject/mor/src
 
 # Include any dependencies generated for this target.
 include CMakeFiles/median.dir/depend.make
@@ -51,17 +51,17 @@ include CMakeFiles/median.dir/flags.make
 
 CMakeFiles/median.dir/median.cpp.o: CMakeFiles/median.dir/flags.make
 CMakeFiles/median.dir/median.cpp.o: median.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/pulkit/Downloads/IA/Project/Code/mor/src/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/neerav/iaproject/mor/src/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/median.dir/median.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/median.dir/median.cpp.o -c /home/pulkit/Downloads/IA/Project/Code/mor/src/median.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/median.dir/median.cpp.o -c /home/neerav/iaproject/mor/src/median.cpp
 
 CMakeFiles/median.dir/median.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/median.dir/median.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/pulkit/Downloads/IA/Project/Code/mor/src/median.cpp > CMakeFiles/median.dir/median.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/neerav/iaproject/mor/src/median.cpp > CMakeFiles/median.dir/median.cpp.i
 
 CMakeFiles/median.dir/median.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/median.dir/median.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/pulkit/Downloads/IA/Project/Code/mor/src/median.cpp -o CMakeFiles/median.dir/median.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/neerav/iaproject/mor/src/median.cpp -o CMakeFiles/median.dir/median.cpp.s
 
 CMakeFiles/median.dir/median.cpp.o.requires:
 .PHONY : CMakeFiles/median.dir/median.cpp.o.requires
@@ -130,6 +130,6 @@ CMakeFiles/median.dir/clean:
 .PHONY : CMakeFiles/median.dir/clean
 
 CMakeFiles/median.dir/depend:
-	cd /home/pulkit/Downloads/IA/Project/Code/mor/src && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pulkit/Downloads/IA/Project/Code/mor/src /home/pulkit/Downloads/IA/Project/Code/mor/src /home/pulkit/Downloads/IA/Project/Code/mor/src /home/pulkit/Downloads/IA/Project/Code/mor/src /home/pulkit/Downloads/IA/Project/Code/mor/src/CMakeFiles/median.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/neerav/iaproject/mor/src && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/neerav/iaproject/mor/src /home/neerav/iaproject/mor/src /home/neerav/iaproject/mor/src /home/neerav/iaproject/mor/src /home/neerav/iaproject/mor/src/CMakeFiles/median.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/median.dir/depend
 

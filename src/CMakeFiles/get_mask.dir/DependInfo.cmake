@@ -4,7 +4,7 @@ SET(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_CXX
-  "/home/neerav/iaproject/mor/src/median.cpp" "/home/neerav/iaproject/mor/src/CMakeFiles/median.dir/median.cpp.o"
+  "/home/neerav/iaproject/mor/src/get_mask.cpp" "/home/neerav/iaproject/mor/src/CMakeFiles/get_mask.dir/get_mask.cpp.o"
   )
 SET(CMAKE_CXX_COMPILER_ID "GNU")
 

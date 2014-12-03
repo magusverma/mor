@@ -1,1 +1,2 @@
-/home/pulkit/Downloads/IA/Project/Code/mor/src/CMakeFiles/median.dir
+/home/neerav/iaproject/mor/src/CMakeFiles/get_mask.dir
+/home/neerav/iaproject/mor/src/CMakeFiles/median.dir

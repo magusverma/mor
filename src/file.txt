@@ -12,4 +12,3 @@
 ../input/vlcsnap-2014-11-20-14h22m57s28.tiff
 ../input/vlcsnap-2014-11-20-14h22m57s30.tiff
 ../input/vlcsnap-2014-11-20-14h22m57s32.tiff
-../input/vlcsnap-2014-11-20-14h22m57s34.png

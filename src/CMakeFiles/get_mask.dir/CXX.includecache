@@ -6,12 +6,14 @@
 
 #IncludeRegexTransform: 
 
-/home/neerav/iaproject/mor/src/median.cpp
+/home/neerav/iaproject/mor/src/get_mask.cpp
 opencv/cv.h
 -
 opencv/highgui.h
 -
 iostream
+-
+queue
 -
 fstream
 -
