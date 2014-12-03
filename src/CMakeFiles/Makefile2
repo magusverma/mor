@@ -53,13 +53,48 @@ CMAKE_SOURCE_DIR = /Users/prasant/Documents/workspace/ImageAnalysis/moving_objec
 CMAKE_BINARY_DIR = /Users/prasant/Documents/workspace/ImageAnalysis/moving_object_removal/src
 
 #=============================================================================
+# Target rules for target CMakeFiles/image_alignment.dir
+
+# All Build rule for target.
+CMakeFiles/image_alignment.dir/all:
+	$(MAKE) -f CMakeFiles/image_alignment.dir/build.make CMakeFiles/image_alignment.dir/depend
+	$(MAKE) -f CMakeFiles/image_alignment.dir/build.make CMakeFiles/image_alignment.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/prasant/Documents/workspace/ImageAnalysis/moving_object_removal/src/CMakeFiles  1
+	@echo "Built target image_alignment"
+.PHONY : CMakeFiles/image_alignment.dir/all
+
+# Include target in all.
+all: CMakeFiles/image_alignment.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/image_alignment.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/prasant/Documents/workspace/ImageAnalysis/moving_object_removal/src/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/image_alignment.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/prasant/Documents/workspace/ImageAnalysis/moving_object_removal/src/CMakeFiles 0
+.PHONY : CMakeFiles/image_alignment.dir/rule
+
+# Convenience name for target.
+image_alignment: CMakeFiles/image_alignment.dir/rule
+.PHONY : image_alignment
+
+# clean rule for target.
+CMakeFiles/image_alignment.dir/clean:
+	$(MAKE) -f CMakeFiles/image_alignment.dir/build.make CMakeFiles/image_alignment.dir/clean
+.PHONY : CMakeFiles/image_alignment.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/image_alignment.dir/clean
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/median.dir
 
 # All Build rule for target.
 CMakeFiles/median.dir/all:
 	$(MAKE) -f CMakeFiles/median.dir/build.make CMakeFiles/median.dir/depend
 	$(MAKE) -f CMakeFiles/median.dir/build.make CMakeFiles/median.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/prasant/Documents/workspace/ImageAnalysis/moving_object_removal/src/CMakeFiles  1
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/prasant/Documents/workspace/ImageAnalysis/moving_object_removal/src/CMakeFiles  2
 	@echo "Built target median"
 .PHONY : CMakeFiles/median.dir/all
 
@@ -85,6 +120,41 @@ CMakeFiles/median.dir/clean:
 
 # clean rule for target.
 clean: CMakeFiles/median.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/registration.dir
+
+# All Build rule for target.
+CMakeFiles/registration.dir/all:
+	$(MAKE) -f CMakeFiles/registration.dir/build.make CMakeFiles/registration.dir/depend
+	$(MAKE) -f CMakeFiles/registration.dir/build.make CMakeFiles/registration.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/prasant/Documents/workspace/ImageAnalysis/moving_object_removal/src/CMakeFiles  3
+	@echo "Built target registration"
+.PHONY : CMakeFiles/registration.dir/all
+
+# Include target in all.
+all: CMakeFiles/registration.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/registration.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/prasant/Documents/workspace/ImageAnalysis/moving_object_removal/src/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/registration.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/prasant/Documents/workspace/ImageAnalysis/moving_object_removal/src/CMakeFiles 0
+.PHONY : CMakeFiles/registration.dir/rule
+
+# Convenience name for target.
+registration: CMakeFiles/registration.dir/rule
+.PHONY : registration
+
+# clean rule for target.
+CMakeFiles/registration.dir/clean:
+	$(MAKE) -f CMakeFiles/registration.dir/build.make CMakeFiles/registration.dir/clean
+.PHONY : CMakeFiles/registration.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/registration.dir/clean
 .PHONY : clean
 
 #=============================================================================

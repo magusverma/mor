@@ -1,8 +1,12 @@
-#include <opencv/cv.h>
-#include <opencv/highgui.h>
+#include <opencv2/core.hpp>
+#include <opencv2/core/utility.hpp>
+#include "opencv2/imgcodecs.hpp"
+#include <opencv2/highgui.hpp>
 #include <iostream>
+#include <sstream>
 
-#define input_img_count 13
+#define input_img_count 5
+// #define input_img_count 13
 
 using namespace std;
 using namespace cv;
@@ -14,19 +18,25 @@ int find_mode_of_vector(vector<int> vals);
 int main(int argc, char const *argv[])
 {
     Mat src_imgs[input_img_count];
-    src_imgs[0] = imread("../input/vlcsnap-2014-11-20-14h22m55s6.tiff", CV_LOAD_IMAGE_COLOR);
-    src_imgs[1] = imread("../input/vlcsnap-2014-11-20-14h22m55s8.tiff", CV_LOAD_IMAGE_COLOR);
-    src_imgs[2] = imread("../input/vlcsnap-2014-11-20-14h22m55s10.tiff", CV_LOAD_IMAGE_COLOR);
-    src_imgs[3] = imread("../input/vlcsnap-2014-11-20-14h22m55s12.tiff", CV_LOAD_IMAGE_COLOR);
-    src_imgs[4] = imread("../input/vlcsnap-2014-11-20-14h22m55s14.tiff", CV_LOAD_IMAGE_COLOR);
-    src_imgs[5] = imread("../input/vlcsnap-2014-11-20-14h22m56s16.tiff", CV_LOAD_IMAGE_COLOR);
-    src_imgs[6] = imread("../input/vlcsnap-2014-11-20-14h22m56s18.tiff", CV_LOAD_IMAGE_COLOR);
-    src_imgs[7] = imread("../input/vlcsnap-2014-11-20-14h22m56s20.tiff", CV_LOAD_IMAGE_COLOR);
-    src_imgs[8] = imread("../input/vlcsnap-2014-11-20-14h22m56s22.tiff", CV_LOAD_IMAGE_COLOR);
-    src_imgs[9] = imread("../input/vlcsnap-2014-11-20-14h22m56s24.tiff", CV_LOAD_IMAGE_COLOR);
-    src_imgs[10] = imread("../input/vlcsnap-2014-11-20-14h22m57s26.tiff", CV_LOAD_IMAGE_COLOR);
-    src_imgs[11] = imread("../input/vlcsnap-2014-11-20-14h22m57s28.tiff", CV_LOAD_IMAGE_COLOR);
-    src_imgs[12] = imread("../input/vlcsnap-2014-11-20-14h22m57s30.tiff", CV_LOAD_IMAGE_COLOR);
+    // src_imgs[0] = imread("../input/vlcsnap-2014-11-20-14h22m55s6.tiff", IMREAD_COLOR);
+    // src_imgs[1] = imread("../input/vlcsnap-2014-11-20-14h22m55s8.tiff", IMREAD_COLOR);
+    // src_imgs[2] = imread("../input/vlcsnap-2014-11-20-14h22m55s10.tiff", IMREAD_COLOR);
+    // src_imgs[3] = imread("../input/vlcsnap-2014-11-20-14h22m55s12.tiff", IMREAD_COLOR);
+    // src_imgs[4] = imread("../input/vlcsnap-2014-11-20-14h22m55s14.tiff", IMREAD_COLOR);
+    // src_imgs[5] = imread("../input/vlcsnap-2014-11-20-14h22m56s16.tiff", IMREAD_COLOR);
+    // src_imgs[6] = imread("../input/vlcsnap-2014-11-20-14h22m56s18.tiff", IMREAD_COLOR);
+    // src_imgs[7] = imread("../input/vlcsnap-2014-11-20-14h22m56s20.tiff", IMREAD_COLOR);
+    // src_imgs[8] = imread("../input/vlcsnap-2014-11-20-14h22m56s22.tiff", IMREAD_COLOR);
+    // src_imgs[9] = imread("../input/vlcsnap-2014-11-20-14h22m56s24.tiff", IMREAD_COLOR);
+    // src_imgs[10] = imread("../input/vlcsnap-2014-11-20-14h22m57s26.tiff", IMREAD_COLOR);
+    // src_imgs[11] = imread("../input/vlcsnap-2014-11-20-14h22m57s28.tiff", IMREAD_COLOR);
+    // src_imgs[12] = imread("../input/vlcsnap-2014-11-20-14h22m57s30.tiff", IMREAD_COLOR);
+
+    src_imgs[0] = imread("../input_color_1.jpg", IMREAD_COLOR);
+    src_imgs[1] = imread("../input_color_2.jpg", IMREAD_COLOR);
+    src_imgs[2] = imread("../input_color_3.jpg", IMREAD_COLOR);
+    src_imgs[3] = imread("../input_color_4.jpg", IMREAD_COLOR);
+    src_imgs[4] = imread("../input_color_5.jpg", IMREAD_COLOR);
 
     Mat median_img = Mat(src_imgs[0].size(), src_imgs[0].type());
     median(src_imgs, median_img);

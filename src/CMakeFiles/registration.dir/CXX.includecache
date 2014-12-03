@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/prasant/Documents/workspace/ImageAnalysis/moving_object_removal/src/registration.cpp
+opencv2/core.hpp
+-
+opencv2/core/utility.hpp
+-
+opencv2/imgcodecs.hpp
+/Users/prasant/Documents/workspace/ImageAnalysis/moving_object_removal/src/opencv2/imgcodecs.hpp
+opencv2/highgui.hpp
+-
+iostream
+-
+sstream
+-
+

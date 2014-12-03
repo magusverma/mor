@@ -103,6 +103,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named image_alignment
+
+# Build rule for target.
+image_alignment: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 image_alignment
+.PHONY : image_alignment
+
+# fast build rule for target.
+image_alignment/fast:
+	$(MAKE) -f CMakeFiles/image_alignment.dir/build.make CMakeFiles/image_alignment.dir/build
+.PHONY : image_alignment/fast
+
+#=============================================================================
 # Target rules for targets named median
 
 # Build rule for target.
@@ -114,6 +127,43 @@ median: cmake_check_build_system
 median/fast:
 	$(MAKE) -f CMakeFiles/median.dir/build.make CMakeFiles/median.dir/build
 .PHONY : median/fast
+
+#=============================================================================
+# Target rules for targets named registration
+
+# Build rule for target.
+registration: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 registration
+.PHONY : registration
+
+# fast build rule for target.
+registration/fast:
+	$(MAKE) -f CMakeFiles/registration.dir/build.make CMakeFiles/registration.dir/build
+.PHONY : registration/fast
+
+image_alignment.o: image_alignment.cpp.o
+.PHONY : image_alignment.o
+
+# target to build an object file
+image_alignment.cpp.o:
+	$(MAKE) -f CMakeFiles/image_alignment.dir/build.make CMakeFiles/image_alignment.dir/image_alignment.cpp.o
+.PHONY : image_alignment.cpp.o
+
+image_alignment.i: image_alignment.cpp.i
+.PHONY : image_alignment.i
+
+# target to preprocess a source file
+image_alignment.cpp.i:
+	$(MAKE) -f CMakeFiles/image_alignment.dir/build.make CMakeFiles/image_alignment.dir/image_alignment.cpp.i
+.PHONY : image_alignment.cpp.i
+
+image_alignment.s: image_alignment.cpp.s
+.PHONY : image_alignment.s
+
+# target to generate assembly for a file
+image_alignment.cpp.s:
+	$(MAKE) -f CMakeFiles/image_alignment.dir/build.make CMakeFiles/image_alignment.dir/image_alignment.cpp.s
+.PHONY : image_alignment.cpp.s
 
 median.o: median.cpp.o
 .PHONY : median.o
@@ -139,6 +189,30 @@ median.cpp.s:
 	$(MAKE) -f CMakeFiles/median.dir/build.make CMakeFiles/median.dir/median.cpp.s
 .PHONY : median.cpp.s
 
+registration.o: registration.cpp.o
+.PHONY : registration.o
+
+# target to build an object file
+registration.cpp.o:
+	$(MAKE) -f CMakeFiles/registration.dir/build.make CMakeFiles/registration.dir/registration.cpp.o
+.PHONY : registration.cpp.o
+
+registration.i: registration.cpp.i
+.PHONY : registration.i
+
+# target to preprocess a source file
+registration.cpp.i:
+	$(MAKE) -f CMakeFiles/registration.dir/build.make CMakeFiles/registration.dir/registration.cpp.i
+.PHONY : registration.cpp.i
+
+registration.s: registration.cpp.s
+.PHONY : registration.s
+
+# target to generate assembly for a file
+registration.cpp.s:
+	$(MAKE) -f CMakeFiles/registration.dir/build.make CMakeFiles/registration.dir/registration.cpp.s
+.PHONY : registration.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -146,11 +220,19 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... image_alignment"
 	@echo "... median"
 	@echo "... rebuild_cache"
+	@echo "... registration"
+	@echo "... image_alignment.o"
+	@echo "... image_alignment.i"
+	@echo "... image_alignment.s"
 	@echo "... median.o"
 	@echo "... median.i"
 	@echo "... median.s"
+	@echo "... registration.o"
+	@echo "... registration.i"
+	@echo "... registration.s"
 .PHONY : help
 
 
