@@ -135,18 +135,19 @@ int main( int argc, char** argv )
   Mat warp_dest(img_color_1.size(),img_color_1.type());
   Mat warp_mat = getAffineTransform(aff_pts_1,aff_pts_2);
 
-  cout << "asfd";
-  warp_mat.at<uchar>(0, 0) = 0;
-  warp_mat.at<uchar>(0, 1) = 0;
-  warp_mat.at<uchar>(1, 0) = 0;
-  warp_mat.at<uchar>(1, 1) = 0;
+  cout << warp_mat << endl;
+  // warp_mat.at<double>(0, 0) = 1;
+  // warp_mat.at<double>(0, 1) = 0;
+  // warp_mat.at<double>(1, 0) = 0;
+  // warp_mat.at<double>(1, 1) = 1;
+  cout << warp_mat << endl;
 
   warpAffine(img_color_1,warp_dest,warp_mat,warp_dest.size());
-  imshow("affined", warp_dest);
+  // imshow("affined", warp_dest);
 
-  // imwrite("../lotus_input/input2.jpg", warp_dest);
+  imwrite("../lotus_input/input2.jpg", warp_dest);
 
-  waitKey(0);
+  // waitKey(0);
 
   return 0;
 }
