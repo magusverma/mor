@@ -3,8 +3,8 @@
 #include <iostream>
 #include <fstream>
 
-#define input_img_count_const 14
-int input_img_count =14;
+#define input_img_count_const 5
+int input_img_count =5;
 
 using namespace std;
 using namespace cv;

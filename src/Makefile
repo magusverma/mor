@@ -116,6 +116,19 @@ affine/fast:
 .PHONY : affine/fast
 
 #=============================================================================
+# Target rules for targets named feature_matching
+
+# Build rule for target.
+feature_matching: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 feature_matching
+.PHONY : feature_matching
+
+# fast build rule for target.
+feature_matching/fast:
+	$(MAKE) -f CMakeFiles/feature_matching.dir/build.make CMakeFiles/feature_matching.dir/build
+.PHONY : feature_matching/fast
+
+#=============================================================================
 # Target rules for targets named median
 
 # Build rule for target.
@@ -152,6 +165,30 @@ affine.cpp.s:
 	$(MAKE) -f CMakeFiles/affine.dir/build.make CMakeFiles/affine.dir/affine.cpp.s
 .PHONY : affine.cpp.s
 
+feature_matching.o: feature_matching.cpp.o
+.PHONY : feature_matching.o
+
+# target to build an object file
+feature_matching.cpp.o:
+	$(MAKE) -f CMakeFiles/feature_matching.dir/build.make CMakeFiles/feature_matching.dir/feature_matching.cpp.o
+.PHONY : feature_matching.cpp.o
+
+feature_matching.i: feature_matching.cpp.i
+.PHONY : feature_matching.i
+
+# target to preprocess a source file
+feature_matching.cpp.i:
+	$(MAKE) -f CMakeFiles/feature_matching.dir/build.make CMakeFiles/feature_matching.dir/feature_matching.cpp.i
+.PHONY : feature_matching.cpp.i
+
+feature_matching.s: feature_matching.cpp.s
+.PHONY : feature_matching.s
+
+# target to generate assembly for a file
+feature_matching.cpp.s:
+	$(MAKE) -f CMakeFiles/feature_matching.dir/build.make CMakeFiles/feature_matching.dir/feature_matching.cpp.s
+.PHONY : feature_matching.cpp.s
+
 median.o: median.cpp.o
 .PHONY : median.o
 
@@ -184,11 +221,15 @@ help:
 	@echo "... depend"
 	@echo "... affine"
 	@echo "... edit_cache"
+	@echo "... feature_matching"
 	@echo "... median"
 	@echo "... rebuild_cache"
 	@echo "... affine.o"
 	@echo "... affine.i"
 	@echo "... affine.s"
+	@echo "... feature_matching.o"
+	@echo "... feature_matching.i"
+	@echo "... feature_matching.s"
 	@echo "... median.o"
 	@echo "... median.i"
 	@echo "... median.s"

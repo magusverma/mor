@@ -88,13 +88,48 @@ clean: CMakeFiles/affine.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/feature_matching.dir
+
+# All Build rule for target.
+CMakeFiles/feature_matching.dir/all:
+	$(MAKE) -f CMakeFiles/feature_matching.dir/build.make CMakeFiles/feature_matching.dir/depend
+	$(MAKE) -f CMakeFiles/feature_matching.dir/build.make CMakeFiles/feature_matching.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/prasant/Documents/workspace/ImageAnalysis/moving_object_removal/src/CMakeFiles  2
+	@echo "Built target feature_matching"
+.PHONY : CMakeFiles/feature_matching.dir/all
+
+# Include target in all.
+all: CMakeFiles/feature_matching.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/feature_matching.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/prasant/Documents/workspace/ImageAnalysis/moving_object_removal/src/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/feature_matching.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/prasant/Documents/workspace/ImageAnalysis/moving_object_removal/src/CMakeFiles 0
+.PHONY : CMakeFiles/feature_matching.dir/rule
+
+# Convenience name for target.
+feature_matching: CMakeFiles/feature_matching.dir/rule
+.PHONY : feature_matching
+
+# clean rule for target.
+CMakeFiles/feature_matching.dir/clean:
+	$(MAKE) -f CMakeFiles/feature_matching.dir/build.make CMakeFiles/feature_matching.dir/clean
+.PHONY : CMakeFiles/feature_matching.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/feature_matching.dir/clean
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/median.dir
 
 # All Build rule for target.
 CMakeFiles/median.dir/all:
 	$(MAKE) -f CMakeFiles/median.dir/build.make CMakeFiles/median.dir/depend
 	$(MAKE) -f CMakeFiles/median.dir/build.make CMakeFiles/median.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/prasant/Documents/workspace/ImageAnalysis/moving_object_removal/src/CMakeFiles  2
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/prasant/Documents/workspace/ImageAnalysis/moving_object_removal/src/CMakeFiles  3
 	@echo "Built target median"
 .PHONY : CMakeFiles/median.dir/all
 

@@ -49,5 +49,6 @@ set(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/affine.dir/DependInfo.cmake"
+  "CMakeFiles/feature_matching.dir/DependInfo.cmake"
   "CMakeFiles/median.dir/DependInfo.cmake"
   )

@@ -7,3 +7,6 @@ target_link_libraries( median ${OpenCV_LIBS} )
 
 add_executable( affine affine.cpp )
 target_link_libraries( affine ${OpenCV_LIBS} )
+
+add_executable( feature_matching feature_matching.cpp )
+target_link_libraries( feature_matching ${OpenCV_LIBS} )
