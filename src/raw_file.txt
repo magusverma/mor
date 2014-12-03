@@ -1,0 +1,5 @@
+../raw_files/input1.jpg
+../raw_files/input2.jpg
+../raw_files/input3.jpg
+../raw_files/input4.jpg
+../raw_files/input5.jpg
