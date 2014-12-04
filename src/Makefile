@@ -43,10 +43,17 @@ RM = /opt/local/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
+<<<<<<< HEAD
 CMAKE_SOURCE_DIR = /Users/prasant/Documents/workspace/ImageAnalysis/moving_object_removal/src
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /Users/prasant/Documents/workspace/ImageAnalysis/moving_object_removal/src
+=======
+CMAKE_SOURCE_DIR = /home/neerav/iaproject/mor/src
+
+# The top-level build directory on which CMake was run.
+CMAKE_BINARY_DIR = /home/neerav/iaproject/mor/src
+>>>>>>> origin/mask
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -73,9 +80,15 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
+<<<<<<< HEAD
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/prasant/Documents/workspace/ImageAnalysis/moving_object_removal/src/CMakeFiles /Users/prasant/Documents/workspace/ImageAnalysis/moving_object_removal/src/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/prasant/Documents/workspace/ImageAnalysis/moving_object_removal/src/CMakeFiles 0
+=======
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/neerav/iaproject/mor/src/CMakeFiles /home/neerav/iaproject/mor/src/CMakeFiles/progress.marks
+	$(MAKE) -f CMakeFiles/Makefile2 all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/neerav/iaproject/mor/src/CMakeFiles 0
+>>>>>>> origin/mask
 .PHONY : all
 
 # The main clean target
@@ -103,6 +116,7 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+<<<<<<< HEAD
 # Target rules for targets named affine
 
 # Build rule for target.
@@ -127,6 +141,19 @@ feature_matching: cmake_check_build_system
 feature_matching/fast:
 	$(MAKE) -f CMakeFiles/feature_matching.dir/build.make CMakeFiles/feature_matching.dir/build
 .PHONY : feature_matching/fast
+=======
+# Target rules for targets named get_mask
+
+# Build rule for target.
+get_mask: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 get_mask
+.PHONY : get_mask
+
+# fast build rule for target.
+get_mask/fast:
+	$(MAKE) -f CMakeFiles/get_mask.dir/build.make CMakeFiles/get_mask.dir/build
+.PHONY : get_mask/fast
+>>>>>>> origin/mask
 
 #=============================================================================
 # Target rules for targets named median
@@ -141,6 +168,7 @@ median/fast:
 	$(MAKE) -f CMakeFiles/median.dir/build.make CMakeFiles/median.dir/build
 .PHONY : median/fast
 
+<<<<<<< HEAD
 affine.o: affine.cpp.o
 .PHONY : affine.o
 
@@ -188,6 +216,31 @@ feature_matching.s: feature_matching.cpp.s
 feature_matching.cpp.s:
 	$(MAKE) -f CMakeFiles/feature_matching.dir/build.make CMakeFiles/feature_matching.dir/feature_matching.cpp.s
 .PHONY : feature_matching.cpp.s
+=======
+get_mask.o: get_mask.cpp.o
+.PHONY : get_mask.o
+
+# target to build an object file
+get_mask.cpp.o:
+	$(MAKE) -f CMakeFiles/get_mask.dir/build.make CMakeFiles/get_mask.dir/get_mask.cpp.o
+.PHONY : get_mask.cpp.o
+
+get_mask.i: get_mask.cpp.i
+.PHONY : get_mask.i
+
+# target to preprocess a source file
+get_mask.cpp.i:
+	$(MAKE) -f CMakeFiles/get_mask.dir/build.make CMakeFiles/get_mask.dir/get_mask.cpp.i
+.PHONY : get_mask.cpp.i
+
+get_mask.s: get_mask.cpp.s
+.PHONY : get_mask.s
+
+# target to generate assembly for a file
+get_mask.cpp.s:
+	$(MAKE) -f CMakeFiles/get_mask.dir/build.make CMakeFiles/get_mask.dir/get_mask.cpp.s
+.PHONY : get_mask.cpp.s
+>>>>>>> origin/mask
 
 median.o: median.cpp.o
 .PHONY : median.o
@@ -221,6 +274,7 @@ help:
 	@echo "... depend"
 	@echo "... affine"
 	@echo "... edit_cache"
+<<<<<<< HEAD
 	@echo "... feature_matching"
 	@echo "... median"
 	@echo "... rebuild_cache"
@@ -230,6 +284,14 @@ help:
 	@echo "... feature_matching.o"
 	@echo "... feature_matching.i"
 	@echo "... feature_matching.s"
+=======
+	@echo "... get_mask"
+	@echo "... median"
+	@echo "... rebuild_cache"
+	@echo "... get_mask.o"
+	@echo "... get_mask.i"
+	@echo "... get_mask.s"
+>>>>>>> origin/mask
 	@echo "... median.o"
 	@echo "... median.i"
 	@echo "... median.s"

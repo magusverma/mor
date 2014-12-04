@@ -1,3 +1,8 @@
+<<<<<<< HEAD
 /Users/prasant/Documents/workspace/ImageAnalysis/moving_object_removal/src/CMakeFiles/affine.dir
 /Users/prasant/Documents/workspace/ImageAnalysis/moving_object_removal/src/CMakeFiles/feature_matching.dir
 /Users/prasant/Documents/workspace/ImageAnalysis/moving_object_removal/src/CMakeFiles/median.dir
+=======
+/home/neerav/iaproject/mor/src/CMakeFiles/get_mask.dir
+/home/neerav/iaproject/mor/src/CMakeFiles/median.dir
+>>>>>>> origin/mask

@@ -35,10 +35,17 @@ RM = /opt/local/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
+<<<<<<< HEAD
 CMAKE_SOURCE_DIR = /Users/prasant/Documents/workspace/ImageAnalysis/moving_object_removal/src
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /Users/prasant/Documents/workspace/ImageAnalysis/moving_object_removal/src
+=======
+CMAKE_SOURCE_DIR = /home/neerav/iaproject/mor/src
+
+# The top-level build directory on which CMake was run.
+CMAKE_BINARY_DIR = /home/neerav/iaproject/mor/src
+>>>>>>> origin/mask
 
 # Include any dependencies generated for this target.
 include CMakeFiles/median.dir/depend.make
@@ -51,6 +58,7 @@ include CMakeFiles/median.dir/flags.make
 
 CMakeFiles/median.dir/median.cpp.o: CMakeFiles/median.dir/flags.make
 CMakeFiles/median.dir/median.cpp.o: median.cpp
+<<<<<<< HEAD
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/prasant/Documents/workspace/ImageAnalysis/moving_object_removal/src/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/median.dir/median.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/median.dir/median.cpp.o -c /Users/prasant/Documents/workspace/ImageAnalysis/moving_object_removal/src/median.cpp
@@ -62,6 +70,19 @@ CMakeFiles/median.dir/median.cpp.i: cmake_force
 CMakeFiles/median.dir/median.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/median.dir/median.cpp.s"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /Users/prasant/Documents/workspace/ImageAnalysis/moving_object_removal/src/median.cpp -o CMakeFiles/median.dir/median.cpp.s
+=======
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/neerav/iaproject/mor/src/CMakeFiles $(CMAKE_PROGRESS_1)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/median.dir/median.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/median.dir/median.cpp.o -c /home/neerav/iaproject/mor/src/median.cpp
+
+CMakeFiles/median.dir/median.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/median.dir/median.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/neerav/iaproject/mor/src/median.cpp > CMakeFiles/median.dir/median.cpp.i
+
+CMakeFiles/median.dir/median.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/median.dir/median.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/neerav/iaproject/mor/src/median.cpp -o CMakeFiles/median.dir/median.cpp.s
+>>>>>>> origin/mask
 
 CMakeFiles/median.dir/median.cpp.o.requires:
 .PHONY : CMakeFiles/median.dir/median.cpp.o.requires
@@ -130,6 +151,10 @@ CMakeFiles/median.dir/clean:
 .PHONY : CMakeFiles/median.dir/clean
 
 CMakeFiles/median.dir/depend:
+<<<<<<< HEAD
 	cd /Users/prasant/Documents/workspace/ImageAnalysis/moving_object_removal/src && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/prasant/Documents/workspace/ImageAnalysis/moving_object_removal/src /Users/prasant/Documents/workspace/ImageAnalysis/moving_object_removal/src /Users/prasant/Documents/workspace/ImageAnalysis/moving_object_removal/src /Users/prasant/Documents/workspace/ImageAnalysis/moving_object_removal/src /Users/prasant/Documents/workspace/ImageAnalysis/moving_object_removal/src/CMakeFiles/median.dir/DependInfo.cmake --color=$(COLOR)
+=======
+	cd /home/neerav/iaproject/mor/src && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/neerav/iaproject/mor/src /home/neerav/iaproject/mor/src /home/neerav/iaproject/mor/src /home/neerav/iaproject/mor/src /home/neerav/iaproject/mor/src/CMakeFiles/median.dir/DependInfo.cmake --color=$(COLOR)
+>>>>>>> origin/mask
 .PHONY : CMakeFiles/median.dir/depend
 

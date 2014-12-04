@@ -32,8 +32,13 @@ set(CMAKE_C_LINKER_PREFERENCE 10)
 
 # Save compiler ABI information.
 set(CMAKE_C_SIZEOF_DATA_PTR "8")
+<<<<<<< HEAD:src/CMakeFiles/3.0.0/CMakeCCompiler.cmake
 set(CMAKE_C_COMPILER_ABI "")
 set(CMAKE_C_LIBRARY_ARCHITECTURE "")
+=======
+set(CMAKE_C_COMPILER_ABI "ELF")
+set(CMAKE_C_LIBRARY_ARCHITECTURE "x86_64-linux-gnu")
+>>>>>>> origin/mask:src/CMakeFiles/2.8.12.2/CMakeCCompiler.cmake
 
 if(CMAKE_C_SIZEOF_DATA_PTR)
   set(CMAKE_SIZEOF_VOID_P "${CMAKE_C_SIZEOF_DATA_PTR}")
@@ -44,15 +49,25 @@ if(CMAKE_C_COMPILER_ABI)
 endif()
 
 if(CMAKE_C_LIBRARY_ARCHITECTURE)
+<<<<<<< HEAD:src/CMakeFiles/3.0.0/CMakeCCompiler.cmake
   set(CMAKE_LIBRARY_ARCHITECTURE "")
+=======
+  set(CMAKE_LIBRARY_ARCHITECTURE "x86_64-linux-gnu")
+>>>>>>> origin/mask:src/CMakeFiles/2.8.12.2/CMakeCCompiler.cmake
 endif()
 
 
 
 
+<<<<<<< HEAD:src/CMakeFiles/3.0.0/CMakeCCompiler.cmake
 set(CMAKE_C_IMPLICIT_LINK_LIBRARIES "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/6.0/lib/darwin/libclang_rt.osx.a")
 set(CMAKE_C_IMPLICIT_LINK_DIRECTORIES "/usr/lib;/usr/local/lib")
 set(CMAKE_C_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES "/Library/Frameworks;/System/Library/Frameworks")
+=======
+set(CMAKE_C_IMPLICIT_LINK_LIBRARIES "c")
+set(CMAKE_C_IMPLICIT_LINK_DIRECTORIES "/usr/lib/gcc/x86_64-linux-gnu/4.8;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib")
+set(CMAKE_C_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES "")
+>>>>>>> origin/mask:src/CMakeFiles/2.8.12.2/CMakeCCompiler.cmake
 
 
 

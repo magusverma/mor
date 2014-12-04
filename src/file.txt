@@ -1,5 +1,0 @@
-../lotus_input/input1.jpg
-../lotus_input/input2.jpg
-../lotus_input/input3.jpg
-../lotus_input/input4.jpg
-../lotus_input/input5.jpg

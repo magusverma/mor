@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Install script for directory: /Users/prasant/Documents/workspace/ImageAnalysis/moving_object_removal/src
+=======
+# Install script for directory: /home/neerav/iaproject/mor/src
+>>>>>>> origin/mask
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -33,7 +37,20 @@ else()
   set(CMAKE_INSTALL_MANIFEST "install_manifest.txt")
 endif()
 
+<<<<<<< HEAD
 file(WRITE "/Users/prasant/Documents/workspace/ImageAnalysis/moving_object_removal/src/${CMAKE_INSTALL_MANIFEST}" "")
 foreach(file ${CMAKE_INSTALL_MANIFEST_FILES})
   file(APPEND "/Users/prasant/Documents/workspace/ImageAnalysis/moving_object_removal/src/${CMAKE_INSTALL_MANIFEST}" "${file}\n")
 endforeach()
+=======
+IF(CMAKE_INSTALL_COMPONENT)
+  SET(CMAKE_INSTALL_MANIFEST "install_manifest_${CMAKE_INSTALL_COMPONENT}.txt")
+ELSE(CMAKE_INSTALL_COMPONENT)
+  SET(CMAKE_INSTALL_MANIFEST "install_manifest.txt")
+ENDIF(CMAKE_INSTALL_COMPONENT)
+
+FILE(WRITE "/home/neerav/iaproject/mor/src/${CMAKE_INSTALL_MANIFEST}" "")
+FOREACH(file ${CMAKE_INSTALL_MANIFEST_FILES})
+  FILE(APPEND "/home/neerav/iaproject/mor/src/${CMAKE_INSTALL_MANIFEST}" "${file}\n")
+ENDFOREACH(file)
+>>>>>>> origin/mask
